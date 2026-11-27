@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Options | CareerNest</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">CareerNest</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a class="active" href="careers.html">Careers</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-heading">
+      <p class="tagline">EXPLORE YOUR OPTIONS</p>
+      <h1>Discover different <span>career paths.</span></h1>
+      <p>Browse a few popular career areas and learn what each one involves.</p>
+    </section>
+
+    <section class="section career-section">
+      <div class="filters">
+        <input id="search" type="search" placeholder="Search career..." aria-label="Search careers">
+        <select id="category" aria-label="Filter careers">
+          <option value="all">All categories</option>
+          <option value="technology">Technology</option>
+          <option value="design">Design</option>
+          <option value="business">Business</option>
+          <option value="health">Healthcare</option>
+        </select>
+      </div>
+
+      <div class="cards career-cards" id="career-list">
+        <article class="card career" data-category="technology" data-name="software developer programming coding">
+          <div class="icon">⌘</div><h3>Software Developer</h3>
+          <p>Build and maintain websites, applications and software systems.</p>
+          <p class="category">Technology</p>
+        </article>
+        <article class="card career" data-category="design" data-name="ui ux designer design">
+          <div class="icon">✳</div><h3>UI/UX Designer</h3>
+          <p>Design user-friendly digital products and improve user experiences.</p>
+          <p class="category">Design</p>
+        </article>
+        <article class="card career" data-category="business" data-name="business analyst management">
+          <div class="icon">▤</div><h3>Business Analyst</h3>
+          <p>Understand business needs and help organisations improve processes.</p>
+          <p class="category">Business</p>
+        </article>
+        <article class="card career" data-category="health" data-name="healthcare doctor nurse">
+          <div class="icon">✚</div><h3>Healthcare Professional</h3>
+          <p>Support people's health through medical and allied health services.</p>
+          <p class="category">Healthcare</p>
+        </article>
+        <article class="card career" data-category="technology" data-name="cybersecurity analyst security">
+          <div class="icon">⌑</div><h3>Cybersecurity Analyst</h3>
+          <p>Help protect computer systems, networks and digital information.</p>
+          <p class="category">Technology</p>
+        </article>
+        <article class="card career" data-category="business" data-name="human resources recruiter">
+          <div class="icon">◎</div><h3>HR Professional</h3>
+          <p>Support recruitment, employee development and workplace needs.</p>
+          <p class="category">Business</p>
+        </article>
+      </div>
+      <p id="no-results" class="no-results" hidden>No careers match your search.</p>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="index.html">CareerNest</a>
+    <p>Helping you make informed career choices.</p>
+    <small>© <span class="year"></span> CareerNest. All rights reserved.</small>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

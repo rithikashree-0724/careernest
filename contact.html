@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | CareerNest</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">CareerNest</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="careers.html">Careers</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-heading">
+      <p class="tagline">WE ARE HERE TO HELP</p>
+      <h1>Let's talk about your <span>future.</span></h1>
+      <p>Send us your question or tell us what kind of career guidance you need.</p>
+    </section>
+
+    <section class="contact-section">
+      <form id="contact-form" class="contact-form">
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required>
+
+        <label for="subject">What do you need help with?</label>
+        <select id="subject" name="subject" required>
+          <option value="">Select a topic</option>
+          <option>Choosing a career</option>
+          <option>Course information</option>
+          <option>Career opportunities</option>
+          <option>Other</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+        <button class="button" type="submit">Submit</button>
+        <p id="form-message" class="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <a class="logo" href="index.html">CareerNest</a>
+    <p>Helping you make informed career choices.</p>
+    <small>© <span class="year"></span> CareerNest. All rights reserved.</small>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
